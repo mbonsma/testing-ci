@@ -1,0 +1,12 @@
+
+language: r
+cache: packages  # store packages to speed build time
+r_packages:
+  - "dplyr" # uses the newest version unless specified in "description.txt"
+  - "testthat"
+script: 
+  - Rscript test.R
+os: 
+  - linux
+  - osx
+
